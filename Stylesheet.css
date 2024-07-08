@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+section{
+    padding: 100px 0;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family:  Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 3px deepskyblue;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30x 0;
+    font-family:  Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease;
+    background-color: midnightblue;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: deepskyblue;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+    padding: 14px 20px;
+    transition: color 1.0s ease;
+}
+.navbar .menu li a:hover{
+    background-color: black;
+    color: deepskyblue;
+}
+.home{
+    display: flex;
+    background: url("images/bg1.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+.home .max-width{
+    width: 100%;
+    display: flex;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+} 
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+} 
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: darkorange;
+}
+.projects{
+    color: white;
+    background: #111;
+}
+.projects .projects-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.projects .projects-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    margin: 50px 0 50px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.projects .projects-content .card:hover{
+    background: deepskyblue;
+}
+.projects .projects-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .projects-content .card .box:hover{
+    transform: scale(1.05);
+}
+.projects .projects-content .card i{
+    font-size: 50px;
+    color: deepskyblue;
+    transition: color o.3s ease;
+}
+.projects .projects-content .card:hover i{
+    color: #fff;
+}
+.projects .projects-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.skills{
+    height: 100vh;
+}
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+}
+.skills .skills-content .coloumn{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 35px;
+    font-weight: 500;    
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+    font-size: 25px;
+}
+.skills .skills-content .left p span{
+    font-size: medium;
+}
+.skills .skills-content .right .text{
+    font-size: 35px;
+    font-weight: 500;    
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background: deepskyblue;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .cpp::before{
+    width: 70%;
+}
+.skills-content .right .python::before{
+    width: 80%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
+.aboutme{
+    height: 100vh;
+    background-color: lavenderblush;
+}
+.aboutme .aboutme-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutme .aboutme-content .left{
+    width: 45%;
+}
+.aboutme .aboutme-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 lightslategrey;
+}
+.aboutme .aboutme-content .right{
+    width: 55%;
+}
+.aboutme .aboutme-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.aboutme .aboutme-content .right .text span{
+    color: deepskyblue;
+}
+.aboutme .aboutme-content .right p{
+    text-align: justify;
+}
+.aboutme .aboutme-content .right a{
+    display: inline-block;
+    color: #fff;
+    background-color: deepskyblue;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid deepskyblue;
+    transition: all 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutme .aboutme-content .right a:hover{
+    color: deepskyblue;
+    background-color: #fff;
+}
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: gray;
+    text-align: center;
+}
